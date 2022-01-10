@@ -1,0 +1,413 @@
+{
+  "contractName": "Permissions",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Permissions.sol\":\"Permissions\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Permissions.sol\":{\"keccak256\":\"0xba4b608edd45c246b790e97a1d502748ed1df1cbe03ee6aa9dfa9816c19e304c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9947b8f5a09616efc08a9dce6dc91e88191f362d1bc1b1f2d2f58a96b789c56d\",\"dweb:/ipfs/QmZeZBvZfLi453xuHNb7PosvGWWcxWKyh39v7wDHX9hso4\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122090fe4b90aa3741a24e4956293d64a890f55339692379331331e703739f13918d64736f6c634300080a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122090fe4b90aa3741a24e4956293d64a890f55339692379331331e703739f13918d64736f6c634300080a0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:123:5:-:0;;;91:19;;;;;;;;;;66:123;;;;;;",
+  "deployedSourceMap": "66:123:5:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Permissions {\n  constructor() {\n  }\n\n  bool CAN_READ;\n  bool CAN_WRITE;\n  bool CAN_VIEW;\n  bool CAN_READ_WRITE;\n\n}\n",
+  "sourcePath": "D:\\OrganDonationBlockchain\\contracts\\Permissions.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Permissions.sol",
+    "exportedSymbols": {
+      "Permissions": [
+        370
+      ]
+    },
+    "id": 371,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 357,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Permissions",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 370,
+        "linearizedBaseContracts": [
+          370
+        ],
+        "name": "Permissions",
+        "nameLocation": "75:11:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 360,
+              "nodeType": "Block",
+              "src": "105:5:5",
+              "statements": []
+            },
+            "id": 361,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "102:2:5"
+            },
+            "returnParameters": {
+              "id": 359,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:5"
+            },
+            "scope": 370,
+            "src": "91:19:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 363,
+            "mutability": "mutable",
+            "name": "CAN_READ",
+            "nameLocation": "119:8:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "114:13:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 362,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "114:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 365,
+            "mutability": "mutable",
+            "name": "CAN_WRITE",
+            "nameLocation": "136:9:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "131:14:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 364,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "131:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 367,
+            "mutability": "mutable",
+            "name": "CAN_VIEW",
+            "nameLocation": "154:8:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "149:13:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 366,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "149:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 369,
+            "mutability": "mutable",
+            "name": "CAN_READ_WRITE",
+            "nameLocation": "171:14:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "166:19:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 368,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "166:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 371,
+        "src": "66:123:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:158:5"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/Permissions.sol",
+    "exportedSymbols": {
+      "Permissions": [
+        370
+      ]
+    },
+    "id": 371,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 357,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Permissions",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 370,
+        "linearizedBaseContracts": [
+          370
+        ],
+        "name": "Permissions",
+        "nameLocation": "75:11:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 360,
+              "nodeType": "Block",
+              "src": "105:5:5",
+              "statements": []
+            },
+            "id": 361,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "102:2:5"
+            },
+            "returnParameters": {
+              "id": 359,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:0:5"
+            },
+            "scope": 370,
+            "src": "91:19:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 363,
+            "mutability": "mutable",
+            "name": "CAN_READ",
+            "nameLocation": "119:8:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "114:13:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 362,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "114:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 365,
+            "mutability": "mutable",
+            "name": "CAN_WRITE",
+            "nameLocation": "136:9:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "131:14:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 364,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "131:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 367,
+            "mutability": "mutable",
+            "name": "CAN_VIEW",
+            "nameLocation": "154:8:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "149:13:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 366,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "149:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 369,
+            "mutability": "mutable",
+            "name": "CAN_READ_WRITE",
+            "nameLocation": "171:14:5",
+            "nodeType": "VariableDeclaration",
+            "scope": 370,
+            "src": "166:19:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 368,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "166:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 371,
+        "src": "66:123:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:158:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.10+commit.fc410830.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-10T13:25:18.363Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

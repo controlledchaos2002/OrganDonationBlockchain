@@ -1,0 +1,197 @@
+{
+  "contractName": "Record",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Record.sol\":\"Record\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Record.sol\":{\"keccak256\":\"0xefe75e71f64aa64ef3574291b75db3d456ccd88a4cfcb09ba79aa15f234b5aab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cf8f6def431ea2cf8974708e0eb8f66311021e8c581b76083ba90d30feeb464c\",\"dweb:/ipfs/QmbLJvzHzjHYkk5Jh4iyKUerEEzW4p5jLyExZcQd4DbwPs\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122045f2624db6d19dcd3221a1f1348c2c4d4a8dd7f66cac9c2805beafbd777517d264736f6c634300080a0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122045f2624db6d19dcd3221a1f1348c2c4d4a8dd7f66cac9c2805beafbd777517d264736f6c634300080a0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:971:6:-:0;;;88:16;;;;;;;;;;66:971;;;;;;",
+  "deployedSourceMap": "66:971:6:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Record {\n    constructor() {}\n\n//     struct Records {\n//         Entry[] diagnosedEntries;\n//     }\n\n//     struct Entry {\n//         string date;\n//         string hospitalName;\n//         string diagnosedWith;\n//         string medicationsProvided;\n//         address diagnosedBy;\n//     }\n\n//     mapping(address => Records) allRecords;\n    \n//     Entry[] entries;\n//     function createRecord(\n//         string memory _date,\n//         string memory _hospitalName,\n//         string memory _diagnosedWith,\n//         string memory _medicationsProvided,\n//         address _diagnosedBy,\n//         address _patientAddress\n//     ) public {\n//         entries.push(\n//             Entry(\n//                 _date,\n//                 _hospitalName,\n//                 _diagnosedWith,\n//                 _medicationsProvided,\n//                 _diagnosedBy\n//             )\n//         );\n\n//         allRecords[_patientAddress] = Records(entries);\n//     }\n}\n",
+  "sourcePath": "D:\\OrganDonationBlockchain\\contracts\\Record.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Record.sol",
+    "exportedSymbols": {
+      "Record": [
+        377
+      ]
+    },
+    "id": 378,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 372,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Record",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 377,
+        "linearizedBaseContracts": [
+          377
+        ],
+        "name": "Record",
+        "nameLocation": "75:6:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 375,
+              "nodeType": "Block",
+              "src": "102:2:6",
+              "statements": []
+            },
+            "id": 376,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 373,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:6"
+            },
+            "returnParameters": {
+              "id": 374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "102:0:6"
+            },
+            "scope": 377,
+            "src": "88:16:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 378,
+        "src": "66:971:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1006:6"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/Record.sol",
+    "exportedSymbols": {
+      "Record": [
+        377
+      ]
+    },
+    "id": 378,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 372,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Record",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 377,
+        "linearizedBaseContracts": [
+          377
+        ],
+        "name": "Record",
+        "nameLocation": "75:6:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 375,
+              "nodeType": "Block",
+              "src": "102:2:6",
+              "statements": []
+            },
+            "id": 376,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 373,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "99:2:6"
+            },
+            "returnParameters": {
+              "id": 374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "102:0:6"
+            },
+            "scope": 377,
+            "src": "88:16:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 378,
+        "src": "66:971:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1006:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.10+commit.fc410830.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-10T13:25:18.391Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
