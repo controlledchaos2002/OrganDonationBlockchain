@@ -36,6 +36,7 @@ contract Doctor {
     uint256 doctorsCount = 0;
     bool result;
     mapping(address => Doctors) AllDoctors;
+    mapping(address => mapping(address => bool)) permittedDoctors;
 
     function createDoctor(
         string memory _name,
@@ -56,5 +57,12 @@ contract Doctor {
         ) {
             _is_doctor = true;
         } else _is_doctor = false;
+    }
+
+    function hasPermissionToViewRecord(
+        address _patientAddress,
+        address _doctorAddress
+    ) public view returns (bool _hasPermission) {
+        _hasPermission = permittedDoctors[_patientAddress][_doctorAddress];
     }
 }
