@@ -6,6 +6,7 @@ contract Donor {
 
     // Donors[] allDonors;
     mapping(address => Donors) allDonors;
+    mapping(address => mapping(address => bool)) consentsProvided;
     uint donorsCount = 0;
 
     struct Donors {
@@ -53,5 +54,13 @@ contract Donor {
                 _donorAddress,
                 _isConsentGiven
             );
+    }
+
+    function provideConsentForDonation(address _donorAddress, address _patientAddress) public {
+        consentsProvided[_donorAddress][_patientAddress] = true;
+    }
+
+    function checkForConsent(address _donorAddress, address _patientAddress) public view returns(bool _consented) {
+        _consented = consentsProvided[_donorAddress][_patientAddress];
     }
 }
