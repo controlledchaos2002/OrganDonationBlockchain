@@ -7,11 +7,13 @@ contract Admin {
     address public NOTTO_ADMIN;
 
     constructor() {
-        MAIN_ADMIN = 0xE27f249fA6B71C0A8CC90251b0445B30f86E50B0;
-        HOSPITAL_ADMIN = 0xE27f249fA6B71C0A8CC90251b0445B30f86E50B0;
-        NOTTO_ADMIN = 0xdFBDfA018e439621E8446a2aA8086be50c981dEB;
+        MAIN_ADMIN = msg.sender;
+        // MAIN_ADMIN = 0xE27f249fA6B71C0A8CC90251b0445B30f86E50B0;
+        // HOSPITAL_ADMIN = 0xE27f249fA6B71C0A8CC90251b0445B30f86E50B0;
+        // NOTTO_ADMIN = 0xdFBDfA018e439621E8446a2aA8086be50c981dEB;
     }
 
+    
     function set_admin(address _address) public {
         MAIN_ADMIN = _address;
     }
