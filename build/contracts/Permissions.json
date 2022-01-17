@@ -13,23 +13,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "66:123:5:-:0;;;91:19;;;;;;;;;;66:123;;;;;;",
-  "deployedSourceMap": "66:123:5:-:0;;;;;",
+  "sourceMap": "66:123:7:-:0;;;91:19;;;;;;;;;;66:123;;;;;;",
+  "deployedSourceMap": "66:123:7:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Permissions {\n  constructor() {\n  }\n\n  bool CAN_READ;\n  bool CAN_WRITE;\n  bool CAN_VIEW;\n  bool CAN_READ_WRITE;\n\n}\n",
-  "sourcePath": "d:\\OrganDonationBlockchain\\contracts\\Permissions.sol",
+  "sourcePath": "D:\\OrganDonationBlockchain\\contracts\\Permissions.sol",
   "ast": {
     "absolutePath": "project:/contracts/Permissions.sol",
     "exportedSymbols": {
       "Permissions": [
-        475
+        636
       ]
     },
-    "id": 476,
+    "id": 637,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 462,
+        "id": 623,
         "literals": [
           "solidity",
           ">=",
@@ -40,7 +40,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:32:5"
+        "src": "32:32:7"
       },
       {
         "abstract": false,
@@ -49,22 +49,22 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 475,
+        "id": 636,
         "linearizedBaseContracts": [
-          475
+          636
         ],
         "name": "Permissions",
-        "nameLocation": "75:11:5",
+        "nameLocation": "75:11:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 465,
+              "id": 626,
               "nodeType": "Block",
-              "src": "105:5:5",
+              "src": "105:5:7",
               "statements": []
             },
-            "id": 466,
+            "id": 627,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -72,32 +72,32 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 463,
+              "id": 624,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "102:2:5"
+              "src": "102:2:7"
             },
             "returnParameters": {
-              "id": 464,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "105:0:5"
+              "src": "105:0:7"
             },
-            "scope": 475,
-            "src": "91:19:5",
+            "scope": 636,
+            "src": "91:19:7",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 468,
+            "id": 629,
             "mutability": "mutable",
             "name": "CAN_READ",
-            "nameLocation": "119:8:5",
+            "nameLocation": "119:8:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "114:13:5",
+            "scope": 636,
+            "src": "114:13:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -105,10 +105,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 467,
+              "id": 628,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "114:4:5",
+              "src": "114:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -118,13 +118,13 @@
           },
           {
             "constant": false,
-            "id": 470,
+            "id": 631,
             "mutability": "mutable",
             "name": "CAN_WRITE",
-            "nameLocation": "136:9:5",
+            "nameLocation": "136:9:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "131:14:5",
+            "scope": 636,
+            "src": "131:14:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -132,10 +132,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 469,
+              "id": 630,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "131:4:5",
+              "src": "131:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -145,13 +145,13 @@
           },
           {
             "constant": false,
-            "id": 472,
+            "id": 633,
             "mutability": "mutable",
             "name": "CAN_VIEW",
-            "nameLocation": "154:8:5",
+            "nameLocation": "154:8:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "149:13:5",
+            "scope": 636,
+            "src": "149:13:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -159,10 +159,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 471,
+              "id": 632,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "149:4:5",
+              "src": "149:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -172,13 +172,13 @@
           },
           {
             "constant": false,
-            "id": 474,
+            "id": 635,
             "mutability": "mutable",
             "name": "CAN_READ_WRITE",
-            "nameLocation": "171:14:5",
+            "nameLocation": "171:14:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "166:19:5",
+            "scope": 636,
+            "src": "166:19:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -186,10 +186,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 473,
+              "id": 634,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "166:4:5",
+              "src": "166:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -198,26 +198,26 @@
             "visibility": "internal"
           }
         ],
-        "scope": 476,
-        "src": "66:123:5",
+        "scope": 637,
+        "src": "66:123:7",
         "usedErrors": []
       }
     ],
-    "src": "32:158:5"
+    "src": "32:158:7"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/Permissions.sol",
     "exportedSymbols": {
       "Permissions": [
-        475
+        636
       ]
     },
-    "id": 476,
+    "id": 637,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 462,
+        "id": 623,
         "literals": [
           "solidity",
           ">=",
@@ -228,7 +228,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:32:5"
+        "src": "32:32:7"
       },
       {
         "abstract": false,
@@ -237,22 +237,22 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 475,
+        "id": 636,
         "linearizedBaseContracts": [
-          475
+          636
         ],
         "name": "Permissions",
-        "nameLocation": "75:11:5",
+        "nameLocation": "75:11:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 465,
+              "id": 626,
               "nodeType": "Block",
-              "src": "105:5:5",
+              "src": "105:5:7",
               "statements": []
             },
-            "id": 466,
+            "id": 627,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -260,32 +260,32 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 463,
+              "id": 624,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "102:2:5"
+              "src": "102:2:7"
             },
             "returnParameters": {
-              "id": 464,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "105:0:5"
+              "src": "105:0:7"
             },
-            "scope": 475,
-            "src": "91:19:5",
+            "scope": 636,
+            "src": "91:19:7",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 468,
+            "id": 629,
             "mutability": "mutable",
             "name": "CAN_READ",
-            "nameLocation": "119:8:5",
+            "nameLocation": "119:8:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "114:13:5",
+            "scope": 636,
+            "src": "114:13:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -293,10 +293,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 467,
+              "id": 628,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "114:4:5",
+              "src": "114:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -306,13 +306,13 @@
           },
           {
             "constant": false,
-            "id": 470,
+            "id": 631,
             "mutability": "mutable",
             "name": "CAN_WRITE",
-            "nameLocation": "136:9:5",
+            "nameLocation": "136:9:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "131:14:5",
+            "scope": 636,
+            "src": "131:14:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -320,10 +320,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 469,
+              "id": 630,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "131:4:5",
+              "src": "131:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -333,13 +333,13 @@
           },
           {
             "constant": false,
-            "id": 472,
+            "id": 633,
             "mutability": "mutable",
             "name": "CAN_VIEW",
-            "nameLocation": "154:8:5",
+            "nameLocation": "154:8:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "149:13:5",
+            "scope": 636,
+            "src": "149:13:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -347,10 +347,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 471,
+              "id": 632,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "149:4:5",
+              "src": "149:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -360,13 +360,13 @@
           },
           {
             "constant": false,
-            "id": 474,
+            "id": 635,
             "mutability": "mutable",
             "name": "CAN_READ_WRITE",
-            "nameLocation": "171:14:5",
+            "nameLocation": "171:14:7",
             "nodeType": "VariableDeclaration",
-            "scope": 475,
-            "src": "166:19:5",
+            "scope": 636,
+            "src": "166:19:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -374,10 +374,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 473,
+              "id": 634,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "166:4:5",
+              "src": "166:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -386,12 +386,12 @@
             "visibility": "internal"
           }
         ],
-        "scope": 476,
-        "src": "66:123:5",
+        "scope": 637,
+        "src": "66:123:7",
         "usedErrors": []
       }
     ],
-    "src": "32:158:5"
+    "src": "32:158:7"
   },
   "compiler": {
     "name": "solc",
@@ -401,12 +401,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x9FB492DD6fFBC6a1Bd1f09Fd31569b7aEA60F003",
-      "transactionHash": "0xbc3d79674ed475e99a12598fbdafb2a54f92af61c2fd1ac9e2b6754585c921c8"
+      "address": "0x76Ae025447d29a9dD111AD7bDd0b9128dD075296",
+      "transactionHash": "0xf05b30bb79178ef84c029fdf1619724b1c7b6935850ec3f9fd33a64440aafdb8"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-13T10:35:45.932Z",
+  "updatedAt": "2022-01-17T17:04:32.011Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
