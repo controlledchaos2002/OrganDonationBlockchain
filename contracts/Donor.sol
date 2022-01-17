@@ -7,7 +7,9 @@ contract Donor {
     // Donors[] allDonors;
     mapping(address => Donors) allDonors;
     mapping(address => mapping(address => bool)) consentsProvided;
+    mapping(address => address) validDonors;
     uint donorsCount = 0;
+    uint validDonorsCount = 0;
 
     struct Donors {
         string name;
@@ -19,12 +21,8 @@ contract Donor {
         string bloodGroup;
         string donatingOrgans;
         address donorAddress;
-        bool isConsentGiven;
+        bool isValidDonor;
     }
-
-    // struct Organs{
-    //   string name;
-    // }
 
     function createDonor(
         string memory _name,
@@ -36,7 +34,7 @@ contract Donor {
         string memory _bloodGroup,
         string memory _organs,
         address _donorAddress,
-        bool _isConsentGiven
+        bool _isValidDonor
     ) public {
 
       donorsCount ++;
@@ -52,15 +50,38 @@ contract Donor {
                 _bloodGroup,
                 _organs,
                 _donorAddress,
-                _isConsentGiven
+                _isValidDonor
             );
     }
 
+
+    /**
+    @dev - consent provided for donating to patient
+     */
     function provideConsentForDonation(address _donorAddress, address _patientAddress) public {
         consentsProvided[_donorAddress][_patientAddress] = true;
     }
 
+
+    /**
+    @dev - check if consent is available for the patient address
+     */
     function checkForConsent(address _donorAddress, address _patientAddress) public view returns(bool _consented) {
         _consented = consentsProvided[_donorAddress][_patientAddress];
+    }
+
+    function setDonorAsValid(address _donorAddr,address _approvedBy) public {
+        allDonors[_donorAddr].isValidDonor = true;
+        validDonors[_donorAddr] = _approvedBy;
+        validDonorsCount ++;
+    }
+
+    /**
+    @dev - set donor as invalid and adress of the one setting it.
+     */
+    function setDonorAsInValid(address _donorAddr,address _approvedBy) public {
+        allDonors[_donorAddr].isValidDonor = false;
+        validDonors[_donorAddr] = _approvedBy;
+        validDonorsCount --;
     }
 }
