@@ -17,8 +17,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -31,8 +30,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -45,8 +43,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -72,8 +69,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -99,8 +95,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -126,8 +121,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"HOSPITAL_ADMIN\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAIN_ADMIN\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"NOTTO_ADMIN\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get_NOTTO_admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_NOTTO_admin_address\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get_admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_main_admin_address\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"get_hospital_admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_hospital_admin_address\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_NOTTO_admin_addr\",\"type\":\"address\"}],\"name\":\"set_NOTTO_admin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"set_admin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_hospital_admin_addr\",\"type\":\"address\"}],\"name\":\"set_hospital_admin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Admin.sol\":\"Admin\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Admin.sol\":{\"keccak256\":\"0xdb087839fd6a75307a184f549543946dfae059e5027835cec761c3cf27805114\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0bdee73dd5a1f9e9a7e1976b1d561709676e4da18191981853e7cd890cc39b11\",\"dweb:/ipfs/QmRCxX1sDaYQ1q6WYuRV1hy7sNWLD3tkfnTU2EXbQsNBqJ\"]}},\"version\":1}",
@@ -2647,13 +2641,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x392B086B73581bF4C312Bea44A9995aB5a8607E4",
-      "transactionHash": "0x5259dfe58508871a3eed29f2235a48c55ce76b032ee03d168cdc801f0c967ab7"
+      "address": "0xC827Ef4ecB6805d15c4517F19464733C28B465d7",
+      "transactionHash": "0x33cfaaf80d22cd158ce3094cba600d7b1b473a4c427ee03a12b2daeb20735e1f"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-17T17:04:31.930Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-01-19T07:52:02.582Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
