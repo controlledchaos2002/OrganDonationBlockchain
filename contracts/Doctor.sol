@@ -33,10 +33,10 @@ contract Doctor {
         string registrationNumber;
     }
 
-    uint256 doctorsCount = 0;
+    uint256 public doctorsCount = 0;
     bool result;
-    mapping(address => Doctors) AllDoctors;
-    mapping(address => mapping(address => bool)) permittedDoctors;
+    mapping(address => Doctors) public AllDoctors;
+    mapping(address => mapping(address => bool)) public permittedDoctors;
 
     function createDoctor(
         string memory _name,
@@ -55,8 +55,8 @@ contract Doctor {
             keccak256(abi.encodePacked((temp))) ==
             keccak256(abi.encodePacked((blank)))
         ) {
-            _is_doctor = true;
-        } else _is_doctor = false;
+            _is_doctor = false;
+        } else _is_doctor = true;
     }
 
     function hasPermissionToViewRecord(
