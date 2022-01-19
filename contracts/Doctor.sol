@@ -65,4 +65,14 @@ contract Doctor {
     ) public view returns (bool _hasPermission) {
         _hasPermission = permittedDoctors[_patientAddress][_doctorAddress];
     }
+
+
+    /** 
+    TODO only the patient should be able to call this function
+    */
+    function givepermissionToViewRecord(address _patientAddress,
+        address _doctorAddress
+    ) public {
+        permittedDoctors[_patientAddress][_doctorAddress] = true;
+    }
 }
